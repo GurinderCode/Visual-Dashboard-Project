@@ -1,0 +1,13 @@
+body { font-family: Arial; margin: 20px; background-color: lavender; }
+#chart { width: 800px; height: 500px; }
+.bar { fill: steelblue; }
+.bar:hover { fill: orange; }
+h1{ text-align: center;}
+#chart{margin-top: 198px;position: relative;left: 45px;}
+.chart-container {width: 600px; height: 600px; margin: 0 auto; position: relative;top: -67px;right: 184px;transform: scale(0.9); }
+.legend { font-size: 12px; }
+.title { font-size: 18px;font-weight: bold; position: relative; left: -48px;}
+.piechartcontainer{ position: absolute; top: 113px; right: -53px; margin-top: 155px; }
+.form-select{ width: 50%; display: inline-block;  }
+label[for='topic-filter']{ float: left; margin-left: 320px; margin-top: 67px;  }
+label[for='source-filter']{ float: right;  margin-right: 268px;  margin-top: 67px; }

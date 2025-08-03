@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"The OPEC Effect Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>OPEC Oil Production Impact</h1>
+
+    <label for="topic-filter">Topic :
+        <select class="form-select" id="topic-filter" aria-label="Default select example"
+            onchange="onTopicUpdate(this.value)">
+            <option selected>Open this select menu</option>
+        </select>
+    </label>
+    <label for="source-filter">Source :
+        <select class="form-select" id="source-filter" aria-label="Default select example"
+            onchange="onSourceUpdate(this.value)">
+            <option selected>Open this select menu</option>
+
+        </select>
+    </label>
+
+    <div id="chart"></div>
+    <div class="piechartcontainer">
+        <div class="title">Distribution of Entries by Region</div>
+        <div class="chart-container" id="regionPieChart"></div>
+    </div>
+
+    <script src="control.js"></script>
+</body>
+
+</html>
